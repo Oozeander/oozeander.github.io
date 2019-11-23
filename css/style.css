@@ -1,0 +1,70 @@
+.title {
+  margin-bottom: 0px;
+  z-index: 1999;
+  position: absolute;
+  top: 4%;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  font-size: 22px;
+}
+.image {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.image, .image .container {
+  position: relative;
+  z-index: 2;
+}
+.image,
+.image .container > .row {
+  height: calc(100vh - 220px);
+}
+@media (max-width: 991.98px) {
+  .image, .image .container > .row {
+    height: calc(50vh - 196px);
+    min-height: 500px;
+  }
+}
+.image.cover {
+  position: relative;
+}
+.image.cover:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.block {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: box-shadow 0.7s;
+}
+.block:hover {
+  -webkit-box-shadow: 0px 0px 38px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 38px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 38px 4px rgba(0,0,0,0.75);
+}
+@media screen and (max-width: 776px) {
+  .block {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.proj {
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+}
+
+.proj:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
